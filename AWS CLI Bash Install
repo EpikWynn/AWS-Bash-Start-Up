@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo apt-get install python2.7
+sudo python27 get-pip.py
+sudo pip install awscli
+complete -C aws_completer aws
+apt-get update
