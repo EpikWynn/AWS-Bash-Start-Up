@@ -1,6 +1,7 @@
 #!/bin/bash
-#python is installed on  14.04 by default
-sudo python27 get-pip.py
+sudo su -
+apt-get install python-pip
+Y
 sudo pip install awscli
 complete -C aws_completer aws
 apt-get update
