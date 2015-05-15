@@ -1,7 +1,23 @@
 #!/bin/bash
 sudo su -
-apt-get install python-pip
-Y
+#Install AWS CLI and Completer
+apt-get -y install python-pip
+curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
+python get-pip.py
 sudo pip install awscli
 complete -C aws_completer aws
 apt-get update
+#Install Wget
+apt-get install wget
+#Install Git
+apt-get install git
+Y
+#Install Midnight Commander
+apt-get install mc
+Y
+#Install Traceroute
+apt-get install traceroute
+#Install EC2 API Tools
+wget http://s3.amazonaws.com/ec2-downloads/ec2-api-tools.zip
+mkdir /usr/local/ec2
+export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64/jre"
